@@ -12,24 +12,28 @@ See deployment for notes on how to deploy the project on a live system.
 Java 1.8 or +
 Maven 3.5.3
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Using Eclipse IDE
 
 ```
-Give the example
+- Import the java project into the current workspace
+- Run the project as: Maven build ... and configure the goals to be executed (i.e clean install)
+- If you want to run the test cases using Maven, make sure not to select the option 'skip tests' on the Run Configurations Modal
+- After building the project using Maven the project will be ready to be tested manually
+- Right click the project -> run as -> Java Application and then start testing on the Eclipse console
+- For closing the program type 'exit'
 ```
 
-And repeat
+Using the command line
 
 ```
-until finished
+- Install java Java 1.8 or + and Maven 3.5.3. See 
+- Open the command line and navigate to the folder that contains the project, if necessary unzip the project first
+- Type : mvn clean install
+- This will build the project adding the junit dependency and then runs the Junit test cases
+- After running maven you can test the application manually
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
@@ -54,20 +58,15 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 ## Authors
 
-* **Diana Prieto** - *Initial work* - 
+* **Diana Marcela Prieto** - *Initial work* - 
 
 ## License
 
